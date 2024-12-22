@@ -1,0 +1,41 @@
+@import '../base/_custom_variables.scss';
+
+.login{
+    background: $background;
+    height: 100vh;
+    padding: 3rem;
+    &-container{
+        width: 75vw;
+        height: 75vh;
+        background-color: #ffffff20;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    &-image{
+        width: fit-content;
+        margin: auto;
+    }
+    &.register{
+        .login{
+            &-container{
+                position: relative;
+                & .alert{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                }
+            }
+            &-image{
+                position: sticky;
+                top: -60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,240 @@
+/* line 8, ../scss/base/_custom_variables.scss */
+* {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* line 3, ../scss/components/_button.scss */
+.form_input-submit.secondary, .form_input-submit, .form_input-submit.accent {
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  color: #eff0fa;
+}
+
+/* line 10, ../scss/components/_button.scss */
+.form_input-submit.secondary {
+  border: 2px solid;
+}
+
+/* line 3, ../scss/components/_nav.scss */
+.nav {
+  background: #4865FF !important;
+  height: 100vh;
+  padding: 1rem;
+  width: 82px;
+  transition: 1s;
+  position: absolute;
+}
+/* line 10, ../scss/components/_nav.scss */
+.nav-actions {
+  margin-top: auto;
+}
+/* line 13, ../scss/components/_nav.scss */
+.nav-link {
+  height: 50px;
+  width: 50px;
+  margin: 1rem auto;
+  transition: 1s;
+}
+/* line 18, ../scss/components/_nav.scss */
+.nav-link span {
+  transition: 1s;
+  color: #eff0fa;
+}
+/* line 22, ../scss/components/_nav.scss */
+.nav-link i {
+  color: #eff0fa;
+  margin-left: auto;
+}
+/* line 26, ../scss/components/_nav.scss */
+.nav-link.active {
+  background-color: #42D963 !important;
+}
+/* line 28, ../scss/components/_nav.scss */
+.nav-link.active i {
+  color: #4865FF;
+}
+/* line 31, ../scss/components/_nav.scss */
+.nav-link.active span {
+  color: #4865FF;
+  font-size: 900;
+}
+/* line 37, ../scss/components/_nav.scss */
+.nav-link-logout i {
+  color: #eff0fa;
+}
+
+/* line 44, ../scss/components/_nav.scss */
+.tab-content {
+  margin-left: 82px;
+  overflow: hidden;
+}
+
+/* line 6, ../scss/components/_input.scss */
+.form_input-container {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin: 1rem auto;
+}
+/* line 11, ../scss/components/_input.scss */
+.form_input-container_actions {
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+  gap: 1rem;
+}
+/* line 20, ../scss/components/_input.scss */
+.form_input-label {
+  position: absolute;
+  top: 5px;
+  bottom: auto;
+  left: 0px;
+  color: #eff0fa;
+}
+/* line 27, ../scss/components/_input.scss */
+.form_input-text {
+  border: none;
+  border-bottom: 2px solid #eff0fa;
+  background-color: #ffffff20;
+  padding: .5rem;
+  padding-left: 1.5rem;
+  color: #eff0fa;
+  width: 225px;
+}
+/* line 35, ../scss/components/_input.scss */
+.form_input-text::placeholder {
+  color: #eff0fa;
+}
+/* line 38, ../scss/components/_input.scss */
+.form_input-text:focus {
+  box-shadow: none;
+  outline: none;
+}
+/* line 45, ../scss/components/_input.scss */
+.form_input-select .dropdown-toggle {
+  border: none;
+  border-bottom: 2px solid #eff0fa;
+  background: #ffffff20;
+  color: white;
+  width: 225px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  overflow: hidden;
+}
+/* line 56, ../scss/components/_input.scss */
+.form_input-select .dropdown-toggle i {
+  color: white;
+  margin-left: 0;
+  padding: .5rem 0;
+  margin-right: .5rem;
+}
+/* line 62, ../scss/components/_input.scss */
+.form_input-select .dropdown-toggle span {
+  margin: auto 0;
+}
+/* line 65, ../scss/components/_input.scss */
+.form_input-select .dropdown-toggle::after {
+  margin: auto 0 auto auto;
+  z-index: 100;
+}
+/* line 72, ../scss/components/_input.scss */
+.form_input-password {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  background-color: transparent;
+  border: none;
+}
+/* line 78, ../scss/components/_input.scss */
+.form_input-password i {
+  color: #eff0fa;
+}
+/* line 84, ../scss/components/_input.scss */
+.form_input-submit {
+  background-color: #4865FF;
+  text-align: center;
+}
+/* line 88, ../scss/components/_input.scss */
+.form_input-submit.secondary {
+  background-color: transparent;
+  border-color: #4865FF;
+}
+/* line 93, ../scss/components/_input.scss */
+.form_input-submit.accent {
+  background-color: #42D963;
+  color: #4865FF;
+}
+
+/* line 1, ../scss/components/_banner.scss */
+#heroBanner {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 10, ../scss/components/_banner.scss */
+#heroBanner {
+  background: url(../assets/banner-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 15, ../scss/components/_banner.scss */
+#heroBanner-title {
+  width: fit-content;
+  margin: auto;
+}
+
+/* line 3, ../scss/components/_offcanvas.scss */
+.offcanvas {
+  background: #4865FF;
+}
+
+/* line 3, ../scss/pages/_login.scss */
+.login {
+  background: linear-gradient(0deg, black 0%, #4865ff 100%);
+  height: 100vh;
+  padding: 3rem;
+}
+/* line 7, ../scss/pages/_login.scss */
+.login-container {
+  width: 75vw;
+  height: 75vh;
+  background-color: #ffffff20;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+  border-radius: 10px;
+}
+/* line 19, ../scss/pages/_login.scss */
+.login-image {
+  width: fit-content;
+  margin: auto;
+}
+/* line 25, ../scss/pages/_login.scss */
+.login.register .login-container {
+  position: relative;
+}
+/* line 27, ../scss/pages/_login.scss */
+.login.register .login-container .alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* line 35, ../scss/pages/_login.scss */
+.login.register .login-image {
+  position: sticky;
+  top: -60px;
+}

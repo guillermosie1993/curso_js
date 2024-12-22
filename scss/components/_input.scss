@@ -1,0 +1,100 @@
+@import '../base/custom_variables';
+@import '../components/button';
+
+.form{
+    &_input{
+        &-container{
+            position: relative;
+            width: fit-content;
+            margin: auto;
+            margin: 1rem auto;
+            &_actions{
+                display: flex;
+                flex-flow: column;
+                width: fit-content;
+                justify-content: center;
+                margin: auto;
+                gap: 1rem;
+            }
+        }
+        &-label{
+            position: absolute;
+            top: 5px;
+            bottom: auto;
+            left: 0px;
+            color: $color-white
+        }
+        &-text{
+            border: none;
+            border-bottom: 2px solid $color-white;
+            background-color: #ffffff20;
+            padding: .5rem;
+            padding-left: 1.5rem;
+            color: $color-white;
+            width: 225px;
+            &::placeholder{
+                color: $color-white
+            }
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        &-select{
+            & .dropdown{
+                &-toggle{
+                    border: none;
+                    border-bottom: 2px solid $color-white;
+                    background: #ffffff20;
+                    color: white;
+                    width: 225px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: start;
+                    overflow: hidden;
+                    
+                    i{
+                        color: white;
+                        margin-left: 0;
+                        padding: .5rem 0;
+                        margin-right: .5rem;
+                    }
+                    span{
+                        margin: auto 0;
+                    }
+                    &::after{
+                        margin: auto 0 auto auto;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+        &-password{
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-color: transparent;
+            border: none;
+            i{
+                color: $color-white
+            }
+            &.show{
+            }
+        }
+        &-submit{
+            @extend %btn-primary;
+            background-color: $color-primary;
+            text-align: center;
+            &.secondary{
+                @extend %btn-secondary;
+                background-color: transparent;
+                border-color: $color-primary;
+            }
+            &.accent{
+                @extend %btn-primary;
+                background-color: $color-secondary;
+                color: $color-primary;
+            }
+        }
+    }
+}

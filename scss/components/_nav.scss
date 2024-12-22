@@ -1,0 +1,47 @@
+@import '../base/custom_variables';
+
+.nav{
+    background: $color-primary !important;
+    height: 100vh;
+    padding: 1rem;
+    width: 82px;
+    transition: 1s;
+    position: absolute;
+    &-actions{
+        margin-top: auto;
+    }
+    &-link{
+        height: 50px;
+        width: 50px;
+        margin: 1rem auto;
+        transition: 1s;
+        span{
+            transition: 1s;
+            color: $color-white;
+        }
+        i{
+            color: $color-white;
+            margin-left: auto;
+        }
+        &.active{
+            background-color: $color-secondary !important;
+            i{
+                color: $color-primary;
+            }
+            span{
+                color: $color-primary;
+                font-size: 900;
+            }
+        }
+        &-logout{
+            i{
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.tab-content{
+    margin-left: 82px;
+    overflow: hidden;
+}
