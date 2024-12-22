@@ -1,0 +1,20 @@
+%banner{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#heroBanner{
+    @extend %banner;
+    background: url(../assets/banner-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title{
+        width: fit-content;
+        margin: auto;
+    }
+}
+
