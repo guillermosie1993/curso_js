@@ -1,0 +1,13 @@
+@import '../base/custom_variables';
+
+%btn-primary{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    color: $color-white;
+}
+%btn-secondary{
+    @extend %btn-primary;
+    border: 2px solid;
+}
