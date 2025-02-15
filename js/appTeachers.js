@@ -117,7 +117,6 @@ inputSubmit.addEventListener('click', (e)=>{
         }
 
     }else{
-        console.log('hola else');
         e.preventDefault();
         if (inputUserName.value == '') {
             inputUserName.style.borderColor = '#ff4e48';
@@ -140,9 +139,9 @@ inputSubmit.addEventListener('click', (e)=>{
     }
 });
 
-if (currentUserParse.role != 'principal' && currentUserParse.role != 'admin') {
+/* if (currentUserParse.role != 'principal' && currentUserParse.role != 'admin') {
     addUserButton.remove();
-}
+} */
 
 let instituteteacher = localStorage.getItem('institutes', []);
 let instituteListteacher = JSON.parse(instituteteacher);

@@ -6,10 +6,10 @@ let inputUserName = document.getElementById('inputlogin-username');
 let inputSubmit = document.getElementById('inputlogin-submit');
 
 localStorage.setItem('users', []);
-localStorage.setItem('institutes', []);
+
 
 const superUser = new User('admin','1', 'superadmin', '1000', 'admin');
-const principalUser = new User('Carmen Perez', '12326511', 'instituto1', '0', 'principal');
+const principalUser = new User('Carmen Perez', '12326511', '123456', '0', 'principal');
 const studentUser = new User('Guillermo Siegel', '37450960', '123456', '0', 'student');
 
 
@@ -20,14 +20,23 @@ let newSuperUser = JSON.parse(localStorage.getItem('users') || '[]');
 newSuperUser.push(superUser, principalUser, studentUser);
 localStorage.setItem('users', JSON.stringify(newSuperUser));
 
-institute1.addNewStudent('37450960', 'Guillermo Siegel', 'tercero', [], 0);
-institute1.addNewTeacher('12326511', 'Carmen Perez');
-institute1.addNewClassRoom('12326511', 'Carmen Perez','tercero');
-
-
 let institutes = JSON.parse(localStorage.getItem('institutes') || '[]');
-institutes.push(institute1, institute2);
-localStorage.setItem('institutes', JSON.stringify(institutes));
+
+let instituteIndex = institutes.findIndex(institute => institute.id == institute1.id);
+
+if (instituteIndex > -1) {
+    institutes[instituteIndex] = institutes[instituteIndex];
+} else {
+    institute1.addNewStudent('37450960', 'Guillermo Siegel', 'tercero', [], 0);
+    institute1.addNewTeacher('12326511', 'Carmen Perez');
+    institute1.addNewClassRoom('12326511', 'Carmen Perez','tercero');
+    institute1.addNewEvent('Primer dia de clases', '2025/01/01', '2025/01/01','tercero');
+    institutes.push(institute1);
+    localStorage.setItem('institutes', []);
+    localStorage.setItem('institutes', JSON.stringify(institutes));
+}
+
+
 
 showPassword.addEventListener('click', (e)=>{
     if (inputPassword.type === 'password') {

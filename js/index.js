@@ -27,14 +27,26 @@ export class Classroom{
     }
 
 }
-
+export class Event {
+    constructor(title,start, end, course) {
+        this.title = title,
+        this.start = start,
+        this.end = end,
+        this.course = course
+    }
+}
 export class Institute {
-    constructor(id, name, students = [], classRooms = [], teachers = []) {
+    constructor(id, name, students = [], classRooms = [], teachers = [], events = []) {
         this.id = id,
         this.name = name,
-        this.classRooms = classRooms
-        this.students = students
-        this.teachers = teachers
+        this.classRooms = classRooms,
+        this.students = students,
+        this.teachers = teachers,
+        this.events = events
+    }
+    addNewEvent(date, title, course ){
+        const newEvent = new Event(date, title, course);
+        this.events.push(newEvent);
     }
     addNewClassRoom(dni, teacher, grade){
         const newClassroom = new Classroom(dni, teacher, grade);
@@ -56,7 +68,8 @@ export class Institute {
         return institute;
         
     }
-    getAllStudents(institute){
+
+/*     getAllStudents(institute){
         let has_students = institute.students;
         if (has_students.length > 0) {
             let studentList = has_students.map(student => `${student.dni} | ${student.surname} | ${student.name} | ${student.course}` ).join(' \n\ ');
@@ -64,7 +77,7 @@ export class Institute {
         }else{
             alert('No tenes alumnos registrados en este instituto');
         }
-    }
+    } */
 }
 function is_institute(inst){   
     return app.filter(institute => {

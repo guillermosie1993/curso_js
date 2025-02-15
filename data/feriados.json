@@ -1,0 +1,80 @@
+[
+    {
+        "title": "año nuevo",
+        "start": "2025/01/01",
+        "end": "2025/01/01",
+        "display": "background"
+    },
+    {
+        "title": "Carnaval",
+        "start": "2025/03/02",
+        "end": "2025/03/03",
+        "display": "background"
+    },{
+        "title": "Día de la Memoria por la Verdad y la Justicia",
+        "start": "2025/03/24",
+        "end": "2025/03/24",
+        "display": "background"
+    },{
+        "title": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+        "start": "2025/04/02",
+        "end": "2025/04/02",
+        "display": "background"
+    },{
+        "title": "Jueves Santo",
+        "start": "2025/04/17",
+        "end": "2025/04/17",
+        "display": "background"
+    },{
+        "title": "Viernes Santo",
+        "start": "2025/04/18",
+        "end": "2025/04/18",
+        "display": "background"
+    },{
+        "title": "Día del Trabajador",
+        "start": "2025/05/01",
+        "end": "2025/05/01",
+        "display": "background"
+    },{
+        "title": "Día de la Revolución de Mayo",
+        "start": "2025/04/25",
+        "end": "2025/04/25",
+        "display": "background"
+    },{
+        "title": "Paso a la Inmortalidad del Gral. Manuel Belgrano",
+        "start": "2025/06/20",
+        "end": "2025/06/20",
+        "display": "background"
+    },{
+        "title": "Día de la Independencia",
+        "start": "2025/07/09",
+        "end": "2025/07/09",
+        "display": "background"
+    },
+    {
+        "title": "Paso a la Inmortalidad del Gral. José de San Martín",
+        "start": "2025/08/17",
+        "end": "2025/08/17",
+        "display": "background"
+    },{
+        "title": "Día de la Raza",
+        "start": "2025/10/12",
+        "end": "2025/10/12",
+        "display": "background"
+    },{
+        "title": "Día de la Soberanía Naciona",
+        "start": "2025/11/24",
+        "end": "2025/11/24",
+        "display": "background"
+    },{
+        "title": "Inmaculada Concepción de María",
+        "start": "2025/12/08",
+        "end": "2025/12/08",
+        "display": "background"
+    },{
+        "title": "Navidad",
+        "start": "2025/12/25",
+        "end": "2025/12/25",
+        "display": "background"
+    }
+]
