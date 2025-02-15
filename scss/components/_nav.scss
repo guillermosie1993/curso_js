@@ -6,7 +6,8 @@
     padding: 1rem;
     width: 82px;
     transition: 1s;
-    position: absolute;
+    position: fixed;
+    flex-wrap: nowrap;
     &-actions{
         margin-top: auto;
     }
@@ -44,4 +45,5 @@
 .tab-content{
     margin-left: 82px;
     overflow: hidden;
+    width: 100%;
 }

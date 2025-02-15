@@ -1,0 +1,21 @@
+@import '../base/custom_variables';
+.home{
+    &-info{
+        position: relative;
+        top: -20px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+        &_card{
+            border: 1px solid #c5c5c5;
+            backdrop-filter: blur(5px);
+            background: #ffffff;
+            width: fit-content;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-flow: column;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0px #52514e;
+        }
+    }
+}

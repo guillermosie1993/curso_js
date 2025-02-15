@@ -24,51 +24,53 @@
   padding: 1rem;
   width: 82px;
   transition: 1s;
-  position: absolute;
+  position: fixed;
+  flex-wrap: nowrap;
 }
-/* line 10, ../scss/components/_nav.scss */
+/* line 11, ../scss/components/_nav.scss */
 .nav-actions {
   margin-top: auto;
 }
-/* line 13, ../scss/components/_nav.scss */
+/* line 14, ../scss/components/_nav.scss */
 .nav-link {
   height: 50px;
   width: 50px;
   margin: 1rem auto;
   transition: 1s;
 }
-/* line 18, ../scss/components/_nav.scss */
+/* line 19, ../scss/components/_nav.scss */
 .nav-link span {
   transition: 1s;
   color: #eff0fa;
 }
-/* line 22, ../scss/components/_nav.scss */
+/* line 23, ../scss/components/_nav.scss */
 .nav-link i {
   color: #eff0fa;
   margin-left: auto;
 }
-/* line 26, ../scss/components/_nav.scss */
+/* line 27, ../scss/components/_nav.scss */
 .nav-link.active {
   background-color: #42D963 !important;
 }
-/* line 28, ../scss/components/_nav.scss */
+/* line 29, ../scss/components/_nav.scss */
 .nav-link.active i {
   color: #4865FF;
 }
-/* line 31, ../scss/components/_nav.scss */
+/* line 32, ../scss/components/_nav.scss */
 .nav-link.active span {
   color: #4865FF;
   font-size: 900;
 }
-/* line 37, ../scss/components/_nav.scss */
+/* line 38, ../scss/components/_nav.scss */
 .nav-link-logout i {
   color: #eff0fa;
 }
 
-/* line 44, ../scss/components/_nav.scss */
+/* line 45, ../scss/components/_nav.scss */
 .tab-content {
   margin-left: 82px;
   overflow: hidden;
+  width: 100%;
 }
 
 /* line 6, ../scss/components/_input.scss */
@@ -195,6 +197,48 @@
 /* line 3, ../scss/components/_offcanvas.scss */
 .offcanvas {
   background: #4865FF;
+}
+
+/* line 3, ../scss/components/_calendar.scss */
+.fc-view-harness {
+  height: 100vh !important;
+}
+/* line 9, ../scss/components/_calendar.scss */
+.fc-col-header {
+  width: 100% !important;
+}
+/* line 15, ../scss/components/_calendar.scss */
+.fc-scrollgrid-sync-table {
+  height: 100% !important;
+  width: 86vw !important;
+}
+
+/* line 1, ../scss/components/_alert.scss */
+.alert {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+/* line 3, ../scss/pages/_home.scss */
+.home-info {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+}
+/* line 9, ../scss/pages/_home.scss */
+.home-info_card {
+  border: 1px solid #c5c5c5;
+  backdrop-filter: blur(5px);
+  background: #ffffff;
+  width: fit-content;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-flow: column;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0px #52514e;
 }
 
 /* line 3, ../scss/pages/_login.scss */
